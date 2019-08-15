@@ -29,15 +29,17 @@ Figure 5: Variance and 3-Month Returns
 ![Test Image 1](https://i.imgur.com/AP7mO3n.png)
 
 
-1.3 Main Results and Findings
+## Main Results and Findings
 
-
-global minimum variance portfolio is y will outperform all other portfolios. However, the tangency returns are very close and are very similar to the global minimum variance portfolio. Additionally, by using the S&P500 denoted as (SPY) and the lowest line in Figure 3 it becomes easy to see how well the portfolios outperform the market over the course of the year.
-
-Figures 3 & 4:Cumulative Returns & Percentage Return. The profits of all portfolios were reinvested quarterly
-
-2. Financial Models
 To answer the question if momentum can be used as a viable investment strategy, and if the strategy can be improved through portfolio optimization, four separate weight-adjusted portfolios were implemented and multiple assumptions needed to be tested. The first strategy used was the global minimum variance allocation strategy. GMV adjusted portfolios derive their weights based on risk, which is based on the variance of the assets expected returns. The second strategy created a portfolio based on the efficient frontier and was optimized to produce the highest Sharpe ratio possible. Theoretically, the portfolio should have the highest amount of risk-adjusted return possible. Together the GMV portfolio and the tangency portfolio generated the highest returns with an average of 30.42% which is double that of the benchmark market return of the S&P500. The third strategy, the custom strategy, used the positive or negative value of a stocks return over the six-month ranking period to determine if the stock would be shorted or held long. 
+
+
+After selecting stocks for their momentum and creating four portfolio each with a different strategy these were the results. 
+
+![Test Image 1](https://i.imgur.com/Xzd6ssC.png)
+
+The global minimum variance portfolio outperformed all other portfolios. However, the tangency returns are very close and are very similar to the global minimum variance portfolio. Additionally, by using the S&P500 denoted as (SPY) and  it becomes easy to see how well the portfolios outperform the market over the course of the year. The profits of all portfolios were reinvested quarterly
+
 
 
 
@@ -46,7 +48,7 @@ If a stock had a negative return over its six-month ranking period it would be s
 
 
 # Conclusion
-The stock data that was manipulated by adjusting the weights of the portfolios, and testing the future returns based on past performance. The results showed that returns of a global minimum variance and tangency strategy can be viable options for investment strategies. This strategy’s also helped answer whether or not, a basic momentum strategy, which was represented by the equally weighted and the custom-weighted portfolios, could be improved through portfolio optimization.  The GMV portfolio and the tangency had an average return of 30.42% and outperformed a portfolio that was reinvested in the benchmark S&P500 by 225%. The profits of all the portfolios were reinvested each quarter to obtain the year-to-year returns. In order to fully confirm these results the models would need to be proven a year to year basis, however, the returns of the risk-adjusted GMV and sharpe ratio tangency portfolio offer positive support that these strategies could be used to yield positive alpha.
+The stock data that was manipulated by adjusting the weights of the portfolios, and testing the future returns based on past performance. The results showed that returns of a global minimum variance and tangency strategy can be viable options for investment strategies. This strategy’s also helped answer whether or not, a basic momentum strategy, which was represented by the equally weighted and the custom-weighted portfolios, could be improved through portfolio optimization.  The GMV portfolio and the tangency had an average return of 30.42% and outperformed a portfolio that was reinvested in the benchmark S&P500 by 25%. The profits of all the portfolios were reinvested each quarter to obtain the year-to-year returns. In order to fully confirm these results the models would need to be proven a year to year basis, however, the returns of the risk-adjusted GMV and sharpe ratio tangency portfolio offer positive support that these strategies could be used to yield positive alpha.
 
 
 # Financial Data
