@@ -17,19 +17,24 @@ The screener filtered out stocks with market capitalizations below $1.9 Billion 
 
 ![Test Image 1](https://i.imgur.com/GEyhYlw.png)
 
-The where the cumulative return during the formation period is denoted as PRET. PRET is the sign of PRET is denoted sgn(PRET) and equals +1 when PRET >0 and -1 when PRET <0. ID which stands for information discreteness measures the relative frequency of small signals. A high ID means the returns are more discreet, and a small ID means returns are more continuous. Past winners most often had a high percentage of positive returns and few negative returns.
+The variable that was calcualted to capture wether or not a stock is exhibiting smooth returns is denoted as ID. The cumulative return during the formation period is denoted as PRET. PRET is the sign of PRET is denoted sgn(PRET) and equals +1 when PRET >0 and -1 when PRET <0. ID which stands for information discreteness measures the relative frequency of small signals. A high ID means the returns are more discreet, and a small ID means returns are more continuous. Past winners most often had a high percentage of positive returns and few negative returns.
 
 # Assumptions
 By relying on the “Frog in Pan” hypothesis and momentum as a method for picking stocks there are multiple assumptions that the results will be dependent on. First, stocks with low ID values will produce continuous returns. Secondly, momentum is a good predictor of future performance. Thirdly these stocks will have smooth returns. The results of testing these assumptions will be found in the next section.
-1.3 Main Results and Findings
-As pictured in Figures 3 & 4, the global minimum variance portfolio is y will outperform all other portfolios. However, the tangency returns are very close and are very similar to the global minimum variance portfolio. Additionally, by using the S&P500 denoted as (SPY) and the lowest line in Figure 3 it becomes easy to see how well the portfolios outperform the market over the course of the year.
 
-Figures 3 & 4:Cumulative Returns & Percentage Return. The profits of all portfolios were reinvested quarterly
-To test the assumptions that low-level ID stocks have continuous and “smooth” returns without looking at the stock’s price chart, the variance of the stocks’ daily returns was calculated over the ranking period was compared to its return in the following months. The intuition behind this comparison is that if stock exhibits “smooth” and positive returns then it will also have a low variance. As shown in Figure 5, stocks with low variance overwhelmingly have positive returns, which implies that this assumption could be correct and provides the support that this momentum strategy could be used as a potential investment strategy.
+To test the assumptions that low-level ID stocks have continuous and “smooth” returns the variance of the stocks’ daily returns was calculated over the ranking period was compared to its return in the following months. The intuition behind this comparison is that if stock exhibits “smooth” and positive returns then it will also have a low variance. As shown in the figure below stocks with low variance overwhelmingly have positive returns, which implies that this assumption could be correct and provides the support that this momentum strategy could be used as a potential investment strategy.
 
 
 Figure 5: Variance and 3-Month Returns
 ![Test Image 1](https://i.imgur.com/AP7mO3n.png)
+
+
+1.3 Main Results and Findings
+
+
+global minimum variance portfolio is y will outperform all other portfolios. However, the tangency returns are very close and are very similar to the global minimum variance portfolio. Additionally, by using the S&P500 denoted as (SPY) and the lowest line in Figure 3 it becomes easy to see how well the portfolios outperform the market over the course of the year.
+
+Figures 3 & 4:Cumulative Returns & Percentage Return. The profits of all portfolios were reinvested quarterly
 
 2. Financial Models
 To answer the question if momentum can be used as a viable investment strategy, and if the strategy can be improved through portfolio optimization, four separate weight-adjusted portfolios were implemented and multiple assumptions needed to be tested. The first strategy used was the global minimum variance allocation strategy. GMV adjusted portfolios derive their weights based on risk, which is based on the variance of the assets expected returns. The second strategy created a portfolio based on the efficient frontier and was optimized to produce the highest Sharpe ratio possible. Theoretically, the portfolio should have the highest amount of risk-adjusted return possible. Together the GMV portfolio and the tangency portfolio generated the highest returns with an average of 30.42% which is double that of the benchmark market return of the S&P500. The third strategy, the custom strategy, used the positive or negative value of a stocks return over the six-month ranking period to determine if the stock would be shorted or held long. 
