@@ -3,15 +3,16 @@
 # Backtesting Stocks With a Momentum Strategy
 
 
-1.Introduction
+1. Introduction:
 According to, Eugene Fama, the 2014 co-recipient of the Nobel Prize in Economics and the father of the efficient market hypothesis, the premier anomaly in the efficient market hypothesis is momentum. Momentum is the rate of acceleration of a security’s price, and when a momentum trader sees the acceleration in a stock price, earnings, or revenues, the trader will often take a long or short position in the stock in the hope that its momentum will continue in either an upward or downward direction.
 
-1.1 Method
+
 In the intermediate-term, highly ranked momentum stocks tend to outperform those with lower ranks. For the purpose of this study, the method used for finding equities and ranking them was made easier by using portfolio123.com’s stock screener and ranking system.
 
 Figure 1: 
 Stock Screener
 ![Stock Screen](https://i.imgur.com/lFUDlEN.png)
+
 The screener filtered out stocks with market capitalizations below $1.9 Billion and eliminated stocks whose percent change in price decreased over a 4, 13, and 26 week period. One of the challenges when screening for momentum is finding stocks whose returns are smooth. A study by Mith Awarachka concluded that the path that stock takes to get its final return is more important than the return itself in relation to a stock’s momentum. Firms with smooth, or “high-quality” momentum, tend to do better than those firms with choppy low-quality momentum. To select from the remaining 617 stocks left in the screen in figure 1, a ranking system based on the “Frog in the Pan” hypothesis was implemented and used to select the top 20 momentum stocks. The ranking model used was,
 where the cumulative return during the formation period is denoted as PRET. PRET is the sign of PRET is denoted sgn(PRET) and equals +1 when PRET >0 and -1 when PRET <0. ID which stands for information discreteness measures the relative frequency of small signals. A high ID means the returns are more discreet, and a small ID means returns are more continuous. Past winners most often had a high percentage of positive returns and few negative returns.
 
